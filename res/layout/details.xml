@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="horizontal" >
+
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+         <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onSelectFragment"
+            android:src="@drawable/logo2" />
+        
+  <Button
+      android:id="@+id/btnKunde"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:onClick="onSelectFragment"
+      android:text="Kunde" />
+
+        <Button
+            android:id="@+id/btnMaterial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onSelectFragment"
+            android:text="Material" />
+
+        <Button
+            android:id="@+id/btnMaps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onSelectFragment"
+            android:text="Maps" />
+
+        <Button
+            android:id="@+id/btnMaps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onSelectFragment"
+            android:text="Logout" />
+    </LinearLayout>
+
+    <!--
+          <LinearLayout android:id="@+id/linearLayout1"
+		
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+         <ImageView
+            android:id="@+id/Logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="900dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="829dp"
+            android:layout_height="85dp"
+            
+            android:gravity="top"
+            android:text="Kundendetailansicht"
+            android:textSize="40sp" />
+        
+        </LinearLayout>
+    -->
+
+   <LinearLayout
+        android:id="@+id/loading_view"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+             android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="Kundendetail"
+            android:textSize="40sp"  />
+
+<ListView
+            android:id="@android:id/list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ListView>
+       
+        <!--
+              <ProgressBar
+		    android:id="@+id/progressBar1"
+		    style="?android:attr/progressBarStyleLarge"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" />
+        -->
+
+        
+    </LinearLayout>
+    
+   
+
+</LinearLayout>
